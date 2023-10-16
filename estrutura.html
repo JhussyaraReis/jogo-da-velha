@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Jogo Da Véia</title>
+</head>
+<body class="tela"> 
+        <h1>Jogo da Véia</h1>
+        <div class="area-do-jogo" >
+            <div id = "um" class="linha dir top " onclick="jogar(this.id)"></div>
+            <div id = "dois"  class="linha cen top dois" onclick="jogar(this.id)"></div>
+            <div id = "tres"  class="linha lef top" onclick="jogar('tres')"></div>
+            <div id = "quatro" class="linha dir mei"onclick="jogar('quatro')"></div>
+            <div id = "cinco" class="linha cen mei"onclick="jogar('cinco')"></div>
+            <div id = "seis" class="linha cen lef" onclick="jogar('seis')"></div>
+            <div id = "sete" class="linha dir bot sete"onclick="jogar('sete')"></div>
+            <div id = "oito" class="linha cen bot"onclick="jogar('oito')"></div>
+            <div id = "nove" class="linha lef bot" onclick="jogar('nove')"></div>
+        </div>
+        <h1 id="fimJogo">Fim de Jogo !!!</h1>
+        <div class="botao"> 
+            <button onclick="document.location.reload(true)" class="btn">Iniciar o Jogo</button>
+        </div>
+    
+        
+   
+<script src="velha.js"></script>
+</body>
+</html>
